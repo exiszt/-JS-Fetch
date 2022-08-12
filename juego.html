@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En juego</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="juego.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="spinner"></div>
+        <div id="tablero" class="justify-center flex-center hidden">
+            <div id="cont-arriba">
+                <div>
+                    <p id="textoProgreso" class="texto-arriba">
+                        Pregunta
+                    </p>
+                </div>
+
+                <div style="position:relative; right:40px;">
+                    <p class="tiempoRestante" class="texto-arriba">
+                        10 seg/s
+                    </p>
+                </div>
+
+                <div>
+                    <p class="texto-arriba">
+                        Puntaje
+                    </p>
+                    <h1 class="texto-principal" id="puntaje">
+                    </h1>
+                </div>
+            </div>
+            <div class="contenedor-preguntas">
+                <h2 id="question"></h2>
+            </div>
+            <div class="contenedor-elecciones">
+                <p class="letra-elecciones">A</p>
+                <p class="texto-eleccion" data-number="1"></p>
+            </div>
+            <div class="contenedor-elecciones">
+                <p class="letra-elecciones">B</p>
+                <p class="texto-eleccion" data-number="2"></p>
+            </div>
+            <div class="contenedor-elecciones">
+                <p class="letra-elecciones">C</p>
+                <p class="texto-eleccion" data-number="3"></p>
+            </div>
+            <div class="contenedor-elecciones">
+                <p class="letra-elecciones">D</p>
+                <p class="texto-eleccion" data-number="4"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="juego.js"></script>
+</body>
+
+</html>
